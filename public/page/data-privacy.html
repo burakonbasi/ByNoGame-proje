@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from demo.foodpurby.in/page/data-privacy by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jun 2020 14:38:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" href="../uploads/site-images/1575231213j9Fj3.jpg" type="image/x-icon">
+
+                <title>Cms</title>
+
+        <link href="../../fonts.googleapis.com/csse798.css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,700" rel="stylesheet">
+        <link href="../../fonts.googleapis.com/css5604?family=Arimo:400,700" rel="stylesheet">
+         <link href="../../fonts.googleapis.com/icone91f.css?family=Material+Icons" rel="stylesheet">
+         
+
+
+                <meta name="csrf-param" content="_csrf-foodpurby-v4-frontend">
+    <meta name="csrf-token" content="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag==">
+
+<link href="../frontend/web/assets/5846e08a/css/jquery.toast1172.css?v=1582810086" rel="stylesheet">
+<link href="../frontend/web/assets/5846e08a/css/style44b2.css?v=1582810090" rel="stylesheet">
+<link href="../frontend/web/assets/5846e08a/css/responsive4a7c.css?v=1582810088" rel="stylesheet">
+<link href="../frontend/web/assets/5333d946/authchoice5f3b.css?v=1548701525" rel="stylesheet">
+<script src="../frontend/web/assets/1879cbc5/js/runOnLoadc797.js?v=1582809739"></script>
+<script src="../frontend/web/assets/5846e08a/js/html5shiv.min10be.js?v=1582810210"></script>
+    </head>
+    <body>
+                    
+
+<div class="cart-overlay over-lay"></div>
+<div class="side-menu-items-overlay over-lay"></div>
+<!-- header -->
+<header class="header transparent">
+    <div class="container">
+    <div class="menu_overlay_menu"></div>
+        <div class="logo">
+ 
+                
+                    <a href="#" data-toggle="modal" class="mobile_login" data-target="#login">Login</a>
+             
+
+
+                <a class="img-responsive" href="../index.html"><img src="frontend/web/theme/images/logo.png" alt=""></a>            </div>
+            <div class="navigation">
+            <span class="close-header-menu">×</span>
+               
+                <ul>
+             <!--    <li class="logo-menu">
+                 <a class="img-responsive" href="/"><img src="/frontend/web/theme/images/logo.png" alt=""></a>                    
+                </li> -->
+
+                    <li class="recharge"><a href="#" class="re-btn" data-toggle="modal" data-target="#recharge-wallet">Recharge Now</a></li>
+                
+                    <li>
+             
+                    <a href="#" data-toggle="modal" data-target="#login">Login</a>
+             
+             
+                    </li>
+                     
+                    <li>
+                    <a href="#" class="signup" data-toggle="modal" data-target="#register">Sign Up</a>
+                    </li>
+                     
+                    
+
+                </ul>
+            </div>
+        </div>
+    </header>
+<script type="text/javascript">
+    runOnLoad(function() {
+        $('a.last').on('click', function() {
+            iziToast.question({
+                timeout: 20000,
+                close: false,
+                overlay: true,
+                toastOnce: true,
+                id: 'question',
+                zindex: 999,
+                title: 'Hey',
+                message: 'Do you want to logout?',
+                position: 'center',
+                buttons: [
+                    ['<button><b>YES</b></button>', function (instance, toast) {
+             
+                        instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');    
+                        Core.ajax({
+                            type: "POST",
+                            url: "/logout",
+                            done: function (result) {
+                                console.log('entered');
+//                                window.location.href = result.href;
+//                                Core.success(result.msg);
+                            }
+                        });
+                    
+                    }, true],
+                    ['<button>NO</button>', function (instance, toast) {
+             
+                        instance.hide({ transitionOut: 'fadeOut' }, toast, 'button');
+             
+                    }],
+                ],
+                onClosing: function(instance, toast, closedBy){
+                    console.info('Closing | closedBy: ' + closedBy);
+                },
+                onClosed: function(instance, toast, closedBy){
+                    console.info('Closed | closedBy: ' + closedBy);
+                }
+            });
+        });
+    });
+</script>
+
+
+            
+<section class="subpage-bg cms-sub">
+<div class="container">
+        <h2 class="wow fadeInUp">Data Privacy </h2>
+        <div class="text-center mt-3">
+        <span><ul class="breadcrumb reset">
+			<li><a href="../index.html">Home</a></li>
+            <li>Data Privacy </li>
+		</ul>
+		</span>
+		</div>
+		</div>
+</section>
+
+
+
+<section class="boxed-container mypage">
+
+    <div class="container full" id="cms">
+        <div class="full_row cms mar0">
+		
+            <p> <p>kdjfker eher vh&ouml;e</p>
+ </p>
+			
+        </div>
+	</div>
+</section>
+
+            
+<div id="map"></div>
+<div id="infowindow-content">
+    <span id="place-name"  class="title"></span><br>
+    <span id="place-address"></span>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+    <div class="row">
+    <div class="col-sm-3">
+<h3>Quick Links</h3>
+
+<div class="expand-section">
+     <ul class="quicklinks fadeInUp wow">
+     <li><a href="../index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#driver_register" data-toggle="modal" data-dismiss="modal" data-target="#driver_register">Driver Registration</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#contact_us" data-toggle="modal" data-dismiss="modal" data-target="#contact_us">Contact us</a></li>
+        </ul>
+</div>
+
+    </div>
+
+    <div class="col-sm-3">
+    <h3>Legal</h3>
+    <div class="expand-section">
+     <ul class="quicklinks fadeInUp wow">
+                                       <li><a href="about-us.html">من نحن</a></li>
+                          
+                                                    <li><a href="ragavan.html">GDPR</a></li>
+                          
+                                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                          
+                                                    <li><a href="data-privacy.html">Data Privacy </a></li>
+                          
+                                                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                          
+                                   <!--  <li><a href="/page/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/page/terms-and-conditions">Terms and Conditions </a></li>
+            <li><a href="/page/faq">FAQ </a></li> -->
+        </ul>
+        </div>
+    
+
+    </div>
+
+    <div class="col-sm-3">
+    <h3>Social Networks</h3>
+<div class="expand-section">
+     <div class="social-icons fadeInUp wow">
+                    <a href="../../www.facebook.com/eventcity/index.html"><i class="fa fa-facebook"></i></a>
+                    <a href="../../www.twitter.com/index.html"><i class="fa fa-twitter"></i></a>
+                    <a href="../../plus.google.com/index.html"><i class="fa fa-google-plus"></i></a>
+                    <a href="../../www.instagram.com/eventcity/index.html"><i class="fa fa-instagram"></i></a>
+        </div>
+  </div>
+
+    </div>
+
+    <div class="col-sm-3">
+    <h3>language</h3>
+    <div class="expand-section">
+                    <select class="custom-select fadeInUp wow">
+                                        <option class="lang"  selected="selected"  value="en">English</option>
+                                        <option class="lang"  value="no">Norwegian</option>
+                                        <option class="lang"  value="ar">Arabic</option>
+                                    </select>
+            
+            <div class="mt-3">
+            <img src="../frontend/web/theme/images/pay.png">
+            </div>
+</div>
+    
+    </div>
+</div>
+    </div>
+
+
+<div class="text-center">
+    <a class="footer-logo" href="../index.html"><img src="../frontend/web/theme/images/logo.png" alt=""></a>
+            <p class="copyrights"> © Copyright Technoduce 2020| All rights reserved.</p>
+</div>
+   
+
+    
+    </div>
+</footer>
+<!-- mobile apps -->
+
+
+
+<div class="modal form-login " id="contact_us">
+    <div class="modal-dialog md" role="document">
+        <div class="modal-content">
+     
+        <div class="modal-header">
+                    <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                    <h3 class="modal-title">Partner with us</h3>
+                    <i class="material-icons icons-add">language</i>
+                </div>
+
+            <div class="modal-body">
+                <!-- form -->
+                <form id="contact_us" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag==">
+            
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-user"></i></span>
+                            <div class="form-group no-label field-enquiry-first_name required">
+
+<input type="text" id="enquiry-first_name" class="form-control" name="Enquiry[first_name]" placeholder="First Name" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                 
+
+                 
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-user"></i></span>
+                            <div class="form-group no-label field-enquiry-last_name required">
+
+<input type="text" id="enquiry-last_name" class="form-control" name="Enquiry[last_name]" placeholder="Last Name" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                 
+
+            
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-envelope"></i></span>
+                            <div class="form-group no-label field-enquiry-email required">
+
+<input type="text" id="enquiry-email" class="form-control" name="Enquiry[email]" placeholder="Email Address" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+               
+                
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-screen-smartphone"></i></span>
+                            <div class="form-group no-label field-enquiry-mobile_number required">
+
+<input type="text" id="enquiry-mobile_number" class="form-control" name="Enquiry[mobile_number]" placeholder="Mobile Number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                
+
+           
+                        <div class="form-group icons">
+                            <span class="icons"><i class="fa fa-building"></i></span>
+<div class="form-group no-label field-enquiry-company_name">
+
+<input type="text" id="enquiry-company_name" class="form-control" name="Enquiry[company_name]" placeholder="Company Name">
+
+<div class="help-block"></div>
+</div>                        </div>
+          
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-lock"></i></span>
+<div class="form-group no-label field-enquiry-message required">
+
+<textarea id="enquiry-message" class="form-control" name="Enquiry[message]" placeholder="Message" aria-required="true"></textarea>
+
+<div class="help-block"></div>
+</div>                        </div>
+                 
+
+
+                <div class="form-group btn-form d-table">
+
+<button type="submit" class="btn loader btn-primary d-table-cell pull-right">Submit</button>    
+
+                </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal form-login fade" id="driver_register">
+    <div class="modal-dialog md" role="document">
+        <div class="modal-content">
+   
+      <div class="modal-header">
+                    <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                    <h3 class="modal-title">Driver Registration</h3>
+                    <i class="material-icons icons-add">directions_bike</i>
+                </div>
+
+            <div class="modal-body">
+                <!-- form -->
+<form id="driver_register" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag==">                    
+           
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-user"></i></span>
+<div class="form-group no-label field-deliveryboy-name required">
+
+<input type="text" id="deliveryboy-name" class="form-control" name="DeliveryBoy[name]" value="" placeholder="Name" aria-required="true">
+
+<div class="help-block"></div>
+</div>  
+                        </div>
+                 
+
+                  
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-envelope"></i></span>
+<div class="form-group no-label field-deliveryboy-email required">
+
+<input type="text" id="deliveryboy-email" class="form-control" name="DeliveryBoy[email]" value="" placeholder="Email" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                
+
+              
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-screen-smartphone"></i></span>
+                            <div class="form-group no-label field-deliveryboy-phone_number required">
+
+<input type="text" id="deliveryboy-phone_number" class="form-control" name="DeliveryBoy[phone_number]" value="" placeholder="Mobile Number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                
+                   
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-key"></i></span>
+                            <div class="form-group no-label field-deliveryboy-license_number required">
+
+<input type="text" id="deliveryboy-license_number" class="form-control" name="DeliveryBoy[license_number]" value="" placeholder="License Number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+              
+            
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-lock"></i></span>
+                            <div class="form-group password-field-group no-label field-deliveryboy-password required">
+
+<input type="password" id="deliveryboy-password" class="form-control" name="DeliveryBoy[password]" value="" placeholder="Password" aria-required="true"><span class="mdi mdi-eye pwd-viewer-toggle"></span>
+
+<div class="help-block"></div>
+</div>                        </div>
+                 
+                   
+                        <div class="form-group icons">
+                            <span class="icons"><i class="icon-lock"></i></span>
+                            <div class="form-group password-field-group no-label field-deliveryboy-confirm_password required">
+
+<input type="password" id="deliveryboy-confirm_password" class="form-control" name="DeliveryBoy[confirm_password]" value="" placeholder="Confirm Password" aria-required="true"><span class="mdi mdi-eye pwd-viewer-toggle"></span>
+
+<div class="help-block"></div>
+</div>
+                        </div>
+               
+            
+                        <div class="form-group icons">
+                            <span class="icons"><i class="fa fa-bicycle"></i></span>
+                            <div class="form-group no-label field-deliveryboy-vehicle_number required">
+
+<input type="text" id="deliveryboy-vehicle_number" class="form-control" name="DeliveryBoy[vehicle_number]" value="" placeholder="vehicle number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+            
+                   
+                                     
+             
+                        <div class="form-group custom-checkbox-2 icons"> 
+                            <div class="form-group field-deliveryboy-terms required">
+
+<input type="hidden" name="DeliveryBoy[terms]" value="0"><label><input type="checkbox" id="deliveryboy-terms" name="DeliveryBoy[terms]" value="1"> I accept the <a href="terms-and-conditions.html" target="_blank">Terms and conditions</a>and <a href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
+
+<div class="help-block"></div>
+</div>  
+                            </span>
+                
+                </div>
+
+                <div class="form-group btn-form d-table">
+
+<button type="submit" class="btn loader btn-primary d-table-cell pull-right">Submit</button>    
+
+                </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal -->
+
+    <!-- login modal -->
+    <div class="modal right fade form-login" id="login">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                    <h3 class="modal-title">Sign In to Your Account</h3>
+                    <i class="material-icons icons-add">account_circle</i>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form id="loginform" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag=="> 
+                        <div class="form-group icons">
+                            <span class="icons"><i class="material-icons">email</i></span>
+                            <div class="form-group no-label field-loginform-username required">
+
+<input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" placeholder="Email Address" aria-required="true">
+
+<div class="help-block"></div>
+</div>                        </div>
+                        <div class="form-group icons">
+                            <span class="icons"><i class="material-icons">lock</i></span>
+                            <div class="form-group password-field-group no-label field-loginform-password required">
+
+<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" placeholder="Password" aria-required="true"><span class="mdi mdi-eye pwd-viewer-toggle"></span>
+
+<div class="help-block"></div>
+</div>                        </div>
+
+                        <div class="full_row text-center fr-password">
+                            <a class="f-color-primary" href="#forgot-password" data-toggle="modal" data-dismiss="modal" data-target="#forgot-password">Forgot Password?</a>
+                        </div>
+                        <div class="form-group btn-form">
+                            <button type="submit" id="adfsadfasdF" class="btn loader  btn-primary" data-loading-text="Loading...">Sign In</button>                        </div>
+                    </form>                    <!-- form -->
+                    
+                    <!-- social button -->
+                    <div class="connect-with">
+                        <div class="or-center text-center">Or Login With</div>
+
+                        <a href="../../www.facebook.com/v2.10/dialog/oauth3161?client_id=231999837467389&amp;state=891910d5ce1a111c38a6ce5fc5817aaa&amp;response_type=code&amp;sdk=php-sdk-5.7.0&amp;redirect_uri=http%3A%2F%2Fdemo.foodpurby.in%2Ffb-callback&amp;scope=email" class="btn btn-primary blue"><i class="fa fa-facebook-square mr-10"></i>Connect with Facebook</a>
+
+                       <div id="w0"><a class="btn btn-primary red auth-link" href="../../accounts.google.com/signin/oauth/errorae82.html?authclient=google" title="Google"><i class="fa fa-google-plus-square mr-10"></i> Connect with Google Plus</a></div>                    </div>
+                    <div class="text-center signin">
+                    <h4>Not a member yet ?</h4>
+                    <p>Join us for the easiest way to your favourite food, delivered faster.</p>
+
+                        <a class="btn btn-grey-switch" href="#register" data-toggle="modal" data-dismiss="modal" data-target="#register">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login modal -->
+    
+    
+     <!-- forgot password -->
+    <div class="modal form-login fade" id="forgot-password">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                    <h3 class="modal-title">Forgot your Password</h3>
+                    <i class="material-icons icons-add">lock</i>
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form id="forgotpassword" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag=="> 
+                    <div class="form-group icons">
+                        <span class="icons"><i class="material-icons icons-add">email</i></span>
+                        <div class="form-group no-label field-loginform-username required">
+
+<input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" placeholder="Email Address" aria-required="true">
+
+<div class="help-block"></div>
+</div> 
+                    </div>
+                    <div class="form-group btn-form d-table">
+                        <button type="submit" class="btn loader btn-primary d-table-cell pull-right">Submit</button>                    </div>
+                    </form>                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal form-login fade" id="recharge-wallet">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                <h3 class="modal-title">Recharge Your Account</h3>
+                <i class="material-icons icons-add">account_balance_wallet</i>
+            </div>
+            <div class="modal-body">
+                <!-- form -->
+                <form id="wallet-trans" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag==">                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <div class="form-group icons">
+                    <span class="icons"><i class="material-icons">smartphone</i></span>
+                    <div class="form-group no-label field-wallettransaction-mobile_number required">
+
+<input type="text" id="wallettransaction-mobile_number" class="form-control" name="WalletTransaction[mobile_number]" placeholder="Mobile Number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                </div>
+                <div class="form-group icons">
+                    <span class="icons"><i class="material-icons">swap_horiz</i></span>
+                <div class="form-group no-label field-wallettransaction-amount required">
+
+<input type="text" id="wallettransaction-amount" class="form-control" name="WalletTransaction[amount]" placeholder="Amount" aria-required="true">
+
+<div class="help-block"></div>
+</div>
+                <div class="d-none"><div class="form-group field-wallettransaction-pay_type">
+<input type="hidden" id="wallettransaction-pay_type" class="form-control" name="WalletTransaction[pay_type]" value="1">
+</div></div>
+
+                </div>
+                
+
+
+                <div class="form-group btn-form d-table">
+                    <button type="submit" class="btn loader btn-primary d-table-cell pull-right">Submit</button>                </div>
+                </form>            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal form-login fade" id="transfer-wallet-money">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                <h3 class="modal-title">Transfer Wallet money</h3>
+                <i class="material-icons icons-add">swap_horiz</i>
+            </div>
+            <div class="modal-body">
+                <!-- form -->
+                <form id="wallet-trans-money" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag==">                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <div class="form-group icons">
+                    <span class="icons"><i class="material-icons">smartphone</i></span>
+                    <div class="form-group no-label field-wallettransaction-mobile_number required">
+
+<input type="text" id="wallettransaction-mobile_number" class="form-control" name="WalletTransaction[mobile_number]" placeholder="Mobile Number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                </div>
+                <div class="form-group icons">
+                    <span class="icons"><i class="material-icons">swap_horiz</i></span>
+                    <div class="form-group no-label field-wallettransaction-amount required">
+
+<input type="text" id="wallettransaction-amount" class="form-control" name="WalletTransaction[amount]" placeholder="Amount" aria-required="true">
+
+<div class="help-block"></div>
+</div>                </div>
+                <div class="d-none">
+                <div class="form-group field-wallettransaction-pay_type">
+<input type="hidden" id="wallettransaction-pay_type" class="form-control" name="WalletTransaction[pay_type]" value="2">
+</div>                </div>
+                <div class="form-group btn-form d-table">
+                    <button type="submit" class="btn loader btn-primary d-table-cell pull-right">Submit</button>                </div>
+                </form>            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+runOnLoad(function() {
+
+   
+    $('#loginform').on('beforeSubmit', function(e) {
+            $form = $(this);
+
+
+            Core.ajax({
+                url: '/login',
+                type: 'POST',
+                data: $form.serializeArray(),
+                done: function(json) {
+                    if (Core.isAjaxSuccess(json)) {
+                        window.location.reload();
+                        return false;
+                    }
+
+                    $form.yiiActiveForm('updateMessages',json.errors,true);
+                }
+            });
+            return false;
+        });
+
+    $('#forgotpassword').on('beforeSubmit', function(e) {
+            $form = $(this);
+            $('#forgotpassword .help-block').text('');
+            Core.ajax({
+                url: '/user/forgot-password',
+                type: 'POST',
+                data: $form.serializeArray(),
+                done: function(json) {
+                    if (json.status == 200) {
+                         Core.success('Reset link sent to your Email');
+                        window.location.reload();
+                        return;
+                    }
+                    $('#forgotpassword .help-block').text(json.Error);
+                    return;
+           /*         $form.yiiActiveForm('updateMessages',json.errors,true);*/
+                }
+            });
+            return false;
+        });
+
+     $('#wallet-trans-money').on('beforeSubmit', function(e) {
+        $form = $(this);
+        Core.ajax({
+            url: '/user/wallet-trans?env=dev',
+            type: 'POST',
+            data: $form.serializeArray(),
+            done: function(json) {
+                if (json.status == 1) {
+                    Core.success('Recharged Successfully!');
+                    setTimeout(function(){ location.reload() }, 1000);
+                   
+                    return;
+                }else{
+                        Core.error(json.msg);
+                        Core.error(json.message)
+                }
+                return;
+            }
+        });
+        return false;
+    });
+
+
+     $('#wallet-trans').on('beforeSubmit', function(e) {
+        $form = $(this);
+        Core.ajax({
+            url: '/user/wallet-trans?env=dev',
+            type: 'POST',
+            data: $form.serializeArray(),
+            done: function(json) {
+                if (json.status == 1) {
+                    Core.success('Recharged Successfully!');
+                    setTimeout(function(){ location.reload() }, 1000);
+                   
+                    return;
+                }else{
+                        Core.error(json.msg)
+                }
+                return;
+            }
+        });
+        return false;
+    });
+
+
+});
+</script>
+
+
+<div class="modal form-login fade" id="register">
+        <div class="modal-dialog md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                    <h3 class="modal-title">Sign Up to Your Account</h3>
+                    <i class="material-icons icons-add">person_add</i>
+                    
+                </div>
+                <div class="modal-body">
+                    <!-- form -->
+                    <form id="signup" action="http://demo.foodpurby.in/page/data-privacy" method="post">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag=="> 
+                    
+                       
+                                <div class="form-group icons">
+                                    <span class="icons"><i class="material-icons">person</i></span>
+                                    <div class="form-group no-label field-user-first_name required">
+
+<input type="text" id="user-first_name" class="form-control" name="User[first_name]" placeholder="First Name" aria-required="true">
+
+<div class="help-block"></div>
+</div>    
+                                </div>
+                          
+                                
+                                <div class="form-group icons">
+                                    <span class="icons"><i class="material-icons">person</i></span>
+                                    <div class="form-group no-label field-user-last_name">
+
+<input type="text" id="user-last_name" class="form-control" name="User[last_name]" placeholder="Last Name">
+
+<div class="help-block"></div>
+</div>                                </div>
+                      
+
+                   
+                                <div class="form-group icons">
+                                    <span class="icons"><i class="material-icons">email</i></span>
+                                    <div class="form-group no-label field-user-email required">
+
+<input type="text" id="user-email" class="form-control" name="User[email]" placeholder="Email Address" aria-required="true">
+
+<div class="help-block"></div>
+</div>                                </div>
+                           
+                          
+                                <div class="form-group icons">
+                                <span class="icons"><i class="material-icons">local_phone</i></span>
+                                    <div class="form-group no-label field-user-mobile_number required">
+
+<input type="text" id="user-mobile_number" class="form-control" name="User[mobile_number]" placeholder="Mobile Number" aria-required="true">
+
+<div class="help-block"></div>
+</div>                                </div>
+                       
+
+                    
+                                <div class="form-group icons">
+                                    <span class="icons"><i class="material-icons">lock</i></span>
+                                    <div class="form-group password-field-group no-label field-user-password required">
+
+<input type="password" id="user-password" class="form-control" name="User[password]" placeholder="Password" aria-required="true"><span class="mdi mdi-eye pwd-viewer-toggle"></span>
+
+<div class="help-block"></div>
+</div>                                </div>
+                         
+                        
+                                <div class="form-group icons">
+                                    <span class="icons"><i class="material-icons">lock</i></span>
+                                    <div class="form-group password-field-group no-label field-user-confirm_password required">
+
+<input type="password" id="user-confirm_password" class="form-control" name="User[confirm_password]" placeholder="Confirm Password" aria-required="true"><span class="mdi mdi-eye pwd-viewer-toggle"></span>
+
+<div class="help-block"></div>
+</div>                                </div>
+
+
+                                            <span class="full_row custom-checkbox-2"> 
+                                <div class="form-group field-user-terms required">
+
+<input type="hidden" name="User[terms]" value="0"><label><input type="checkbox" id="user-terms" name="User[terms]" value="1"> I accept the <a href="terms-and-conditions.html" target="_blank">Terms and conditions</a>and <a href="privacy-policy.html" target="_blank">Privacy Policy</a></label>
+
+<div class="help-block"></div>
+</div>  
+                            </span>
+                            
+                       
+
+                        <div class="form-group btn-form">
+
+                
+                            <button type="submit" class="btn loader btn-primary pull-right">Sign Up</button>    
+                            
+                        </div>
+                    </form>                    <!-- form -->
+                    <!-- social button -->
+                    <div class="connect-with">
+                        <div class="or-center text-center">Or Login With</div>
+                        <a href="../../www.facebook.com/v2.10/dialog/oauth3161?client_id=231999837467389&amp;state=891910d5ce1a111c38a6ce5fc5817aaa&amp;response_type=code&amp;sdk=php-sdk-5.7.0&amp;redirect_uri=http%3A%2F%2Fdemo.foodpurby.in%2Ffb-callback&amp;scope=email" class="btn btn-primary blue"><i class="fa fa-facebook-square mr-10"></i> Connect with Facebook</a>
+                        <div id="w1"><a class="btn btn-primary red" href="../../accounts.google.com/signin/oauth/errorae82.html?authclient=google"><i class="fa fa-google-plus-square mr-10"></i> Connect with Google Plus</a></div>
+                    </div>
+                    <div class="text-center signin">
+                    <h4>Already a member ?</h4>
+                    <p>Login now to get that lip-smacking food from your favourite restaurants.</p>
+                        <a class="btn btn-grey-switch" href="#login" data-toggle="modal" data-dismiss="modal" data-target="#login">Login</a>
+                    </div>
+
+       
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="modal_otp" class="modal otp-modal-design fade" role="dialog" data-backdrop="static">
+        <div class="modal-dialog max-300">
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                     <div class="modal-header">
+                    <a href="javascript:void(0)" data-dismiss="modal"><i class="material-icons">arrow_back</i></a>
+                    <h3 class="modal-title">Verify OTP</h3>
+                    <i class="material-icons icons-add">person_add</i>
+                    
+                </div>
+ 
+
+                <div class="modal-body">
+
+<form id="otp" action="http://demo.foodpurby.in/page/data-privacy" method="post" data-validate="true">
+<input type="hidden" name="_csrf-foodpurby-v4-frontend" value="acT4KGZCRG_wjIhLQAcRx4Hj-YV6Y2ylY4EmhhR9nVwNgcFpUSoGB4HY6xEpcmKXrNCm0QoRWc4B6GjCfhXCag==">                    <div class="form-group field-user-otp field-loginform-password required ">
+
+                            <input type="text" id="user-otp" class="form-control" name="OTP" placeholder="Otp">
+                            <input type="hidden" id="user-mobile" name="mobile" value="">
+                             <input type="hidden" id="otp_id" name="otp_id" value="">
+                  
+                        <div id="#otp" class="help-block"></div>
+                    </div>
+
+                    <div class="text-center">
+                    <button class="btns btn btn-primary" type="button" id="otp_validate">Submit</button>
+                    </div>
+                    
+                    </form>                </div> <!--modal-body-->
+            </div><!--modal-content-->
+        </div><!--modal-dialog-->
+</div><!--modal_login-->
+
+
+<script type="text/javascript">
+    
+runOnLoad(function() {
+
+    $('#signup').on('beforeSubmit', function() {        
+      var form = $(this);
+      var no = $('#user-mobile_number').val();
+            $('#modal_otp #user-mobile').val(no);
+
+        Core.ajax({
+            url  : '/user/register',
+            type : 'POST',
+            data : form.serializeArray(),
+            done: function (json) { 
+                if (json.status == 200) {
+                     Core.success('OTP send your Mobile Number');
+                    $('#modal_otp #otp_id').val(json.otp_id)
+                    $('#register').modal('toggle');
+                   $('#modal_otp').modal('toggle');
+                    return false;
+                }else if(json.status ==401){
+                    $('.field-user-email .help-block').text(json.errors);
+                    return;
+                }else{
+                    $('.field-user-mobile_number .help-block').text(json.errors);
+                    return;
+                }
+
+                form.yiiActiveForm('updateMessages', json.errors, true);
+            }            
+        });
+        return false;
+          
+    });
+
+    $('#otp_validate').click(function(){
+        Core.ajax({
+            url  : '/user/otp-verify',
+            type : 'POST',
+            data : $("form#otp").serialize(),
+            done: function (json) { 
+                console.log(json);
+                if(json.status == 200){
+                    Core.success('Registration Successfull');
+                    $('#modal_otp').modal('toggle');
+                    location.reload();
+                    return;
+                }else {
+                    $('#otp .help-block').text(json.Error);
+                    return ;
+                }
+            }            
+        });
+        return false;
+    });
+});
+
+</script>
+
+<script src="../../cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<!-- modal -->
+<script>
+
+    // This example requires the Places library. Include the libraries=places
+    // parameter when you first load the API. For example:
+    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+    function initMap() {
+
+        var card = document.getElementById('pac-card');
+        var input = document.getElementById('pac-input');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+
+        // Bind the map's bounds (viewport) property to the autocomplete object,
+        // so that the autocomplete requests use the current map bounds for the
+        // bounds option in the request.
+
+        // Set the data fields to return when the user selects a place.
+        autocomplete.setFields(
+                ['address_components', 'geometry', 'icon', 'name']);
+
+
+
+        autocomplete.addListener('place_changed', function () {
+            var place = autocomplete.getPlace();
+            /*   show_submit_data(data);
+             return false;*/
+
+            if (!place.geometry) {
+                // User entered the name of a Place that was not suggested and
+                // pressed the Enter key, or the Place Details request failed.
+                Core.error("No details available for input: '" + place.name + "'");
+                return;
+            }
+
+            $('#latitude').val(place.geometry.location.lat());
+            $('#langtitude').val(place.geometry.location.lng());
+            $('.map-submit').click();
+
+            // If the place has a geometry, then present it on a map.
+
+        });
+
+
+    }
+    
+    runOnLoad(function () {
+        $('#contact_us').on('beforeSubmit', function (e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            Core.ajax({
+                url: '/cms/create',
+                type: 'post',
+                data: $("form#contact_us").serialize(),
+                done: function (json) {
+                    if (json.status == 200) {
+                        $('#contact_us').trigger("reset");
+                        Core.success('Enquiry submitted successfully');
+                        $('#contact_us').modal('toggle');
+                        $('form#contact_us').trigger('reset');
+
+                        return false;
+                    }
+                }
+            });
+            return false;
+        });
+
+        $('#driver_register').on('beforeSubmit', function (e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            Core.ajax({
+                url: '/driver/create',
+                type: 'post',
+                data: $("form#driver_register").serialize(),
+                done: function (json) {
+                    if (json.status == 200) {
+                        Core.success(json.message);
+                        $('#driver_register').modal('toggle');
+                        $('form#driver_register').trigger('reset');
+                        return false;
+                    } else {
+                        Core.error(json.message);
+                    }
+                }
+            });
+            return false;
+        });
+
+        $('.custom-select').change(function () {
+            var Val = $('.lang:selected').val();
+            Core.ajax({
+                url: '/site/change-language',
+                type: 'post',
+                data: {"lang": Val},
+                done: function (json) {
+                    if (json.status == 200) {
+                        Core.success('Language changed Successfully');
+                        setTimeout(function () {
+                            location.reload();
+                        }, 2500);
+                    }
+                }
+            });
+
+
+        });
+        
+            });
+    
+    var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+        OneSignal.init({
+            appId: "3367d80c-609c-442a-9fef-fe8244499ed2",
+        });
+    });
+
+</script>
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfEgFTpKyh7XHdF7pbqxlfStMX8zX_QWc&libraries=places&callback=initMap"
+    async defer></script>-->        <script src="../../maps.googleapis.com/maps/api/js941b?key=AIzaSyD2lSczpO8hOgdhHv4okSYluWCBCq22NAI&amp;callback=initMap&amp;libraries=places" async defer></script>
+<script src="../frontend/web/assets/6da03573/jquery2289.js?v=1516469217"></script>
+<script src="../frontend/web/assets/cff49033/yii00ca.js?v=1551337386"></script>
+<script src="../frontend/web/assets/1879cbc5/js/core854b.js?v=1582809738"></script>
+<script src="../frontend/web/assets/5846e08a/js/popper.minb192.js?v=1582810216"></script>
+<script src="../frontend/web/assets/5846e08a/js/bootstrap.minfb05.js?v=1582810205"></script>
+<script src="../frontend/web/assets/5846e08a/js/jquery.smoothState.minec01.js?v=1582810212"></script>
+<script src="../frontend/web/assets/5846e08a/js/iziToast.min1ab4.js?v=1582810211"></script>
+<script src="../frontend/web/assets/5846e08a/js/datepicker.min933a.js?v=1582810207"></script>
+<script src="../frontend/web/assets/5846e08a/js/particles.mina7a2.js?v=1582810214"></script>
+<script src="../frontend/web/assets/5846e08a/js/customf442.js?v=1582810206"></script>
+<script src="../frontend/web/assets/cff49033/yii.validation00ca.js?v=1551337386"></script>
+<script src="../frontend/web/assets/cff49033/yii.activeForm00ca.js?v=1551337386"></script>
+<script src="../frontend/web/assets/5333d946/authchoice5f3b.js?v=1548701525"></script>
+<script>jQuery(function ($) {
+exeOnLoad.apply(arguments);
+jQuery('#contact_us').yiiActiveForm([{"id":"enquiry-first_name","name":"first_name","container":".field-enquiry-first_name","input":"#enquiry-first_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"First Name cannot be blank."});}},{"id":"enquiry-last_name","name":"last_name","container":".field-enquiry-last_name","input":"#enquiry-last_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Last Name cannot be blank."});}},{"id":"enquiry-email","name":"email","container":".field-enquiry-email","input":"#enquiry-email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"enquiry-mobile_number","name":"mobile_number","container":".field-enquiry-mobile_number","input":"#enquiry-mobile_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Mobile Number cannot be blank."});yii.validation.regularExpression(value, messages, {"pattern":/^[0-9]{7,15}$/,"not":false,"message":"Mobile accept only 7 to 15 digit numbers","skipOnEmpty":1});}},{"id":"enquiry-message","name":"message","container":".field-enquiry-message","input":"#enquiry-message","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Message cannot be blank."});}}], {"successCssClass":"success"});
+jQuery('#driver_register').yiiActiveForm([{"id":"deliveryboy-name","name":"name","container":".field-deliveryboy-name","input":"#deliveryboy-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Delivery Boy Name cannot be blank."});}},{"id":"deliveryboy-email","name":"email","container":".field-deliveryboy-email","input":"#deliveryboy-email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"deliveryboy-phone_number","name":"phone_number","container":".field-deliveryboy-phone_number","input":"#deliveryboy-phone_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Phone Number cannot be blank."});yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Phone Number must be an integer.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^[0-9]{7,15}$/,"not":false,"message":"Mobile accept only 7 to 15 digit numbers","skipOnEmpty":1});}},{"id":"deliveryboy-license_number","name":"license_number","container":".field-deliveryboy-license_number","input":"#deliveryboy-license_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Licence Number cannot be blank."});}},{"id":"deliveryboy-password","name":"password","container":".field-deliveryboy-password","input":"#deliveryboy-password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});yii.validation.string(value, messages, {"message":"Password must be a string.","min":6,"tooShort":"Password should contain at least 6 characters.","skipOnEmpty":1});}},{"id":"deliveryboy-confirm_password","name":"confirm_password","container":".field-deliveryboy-confirm_password","input":"#deliveryboy-confirm_password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Confirm Password cannot be blank."});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"deliveryboy-password","compareAttributeName":"DeliveryBoy[password]","message":"Confirm Password must be equal to \"Password\"."}, $form);}},{"id":"deliveryboy-vehicle_number","name":"vehicle_number","container":".field-deliveryboy-vehicle_number","input":"#deliveryboy-vehicle_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Vehicle Number cannot be blank."});}},{"id":"deliveryboy-terms","name":"terms","container":".field-deliveryboy-terms","input":"#deliveryboy-terms","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Accept tearms and conditions","requiredValue":1});}}], {"successCssClass":"success"});
+jQuery('#loginform').yiiActiveForm([{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email Cannot be blank"});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Password cannot be blank."});}}], {"successCssClass":"success"});
+jQuery('#w0').authchoice();
+jQuery('#forgotpassword').yiiActiveForm([{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email Cannot be blank"});}}], {"successCssClass":"success"});
+jQuery('#wallet-trans').yiiActiveForm([{"id":"wallettransaction-mobile_number","name":"mobile_number","container":".field-wallettransaction-mobile_number","input":"#wallettransaction-mobile_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Mobile Number cannot be blank."});yii.validation.string(value, messages, {"message":"Mobile Number must be a string.","min":7,"tooShort":"Mobile Number should contain at least 7 characters.","max":15,"tooLong":"Mobile Number should contain at most 15 characters.","skipOnEmpty":1});yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Mobile Number must be a number.","skipOnEmpty":1});}},{"id":"wallettransaction-amount","name":"amount","container":".field-wallettransaction-amount","input":"#wallettransaction-amount","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Amount cannot be blank."});yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Amount must be a number.","max":10000,"tooBig":"Amount must be no greater than 10000.","skipOnEmpty":1});}}], {"successCssClass":"success"});
+jQuery('#wallet-trans-money').yiiActiveForm([{"id":"wallettransaction-mobile_number","name":"mobile_number","container":".field-wallettransaction-mobile_number","input":"#wallettransaction-mobile_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Mobile Number cannot be blank."});yii.validation.string(value, messages, {"message":"Mobile Number must be a string.","min":7,"tooShort":"Mobile Number should contain at least 7 characters.","max":15,"tooLong":"Mobile Number should contain at most 15 characters.","skipOnEmpty":1});yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Mobile Number must be a number.","skipOnEmpty":1});}},{"id":"wallettransaction-amount","name":"amount","container":".field-wallettransaction-amount","input":"#wallettransaction-amount","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Amount cannot be blank."});yii.validation.number(value, messages, {"pattern":/^\s*[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?\s*$/,"message":"Amount must be a number.","max":10000,"tooBig":"Amount must be no greater than 10000.","skipOnEmpty":1});}}], {"successCssClass":"success"});
+jQuery('#signup').yiiActiveForm([{"id":"user-first_name","name":"first_name","container":".field-user-first_name","input":"#user-first_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"First Name cannot be blank."});}},{"id":"user-email","name":"email","container":".field-user-email","input":"#user-email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Email cannot be blank."});}},{"id":"user-mobile_number","name":"mobile_number","container":".field-user-mobile_number","input":"#user-mobile_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Mobile Number cannot be blank."});yii.validation.regularExpression(value, messages, {"pattern":/^[0-9]{7,15}$/,"not":false,"message":"Mobile accept only 7 to 15 digit numbers","skipOnEmpty":1});}},{"id":"user-password","name":"password","container":".field-user-password","input":"#user-password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Password must be a string.","min":8,"tooShort":"Password should contain at least 8 characters.","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/['\/~`\!@#\$%\^&\*\(\)_\-\+=\{\}\[\]\|;:"\<\>,\.\?\\]/,"not":true,"message":"Password should not contain special charecters","skipOnEmpty":1});yii.validation.regularExpression(value, messages, {"pattern":/^([0-9]+[a-zA-Z]+|[a-zA-Z]+[0-9]+)[0-9a-zA-Z]*$/,"not":false,"message":"Password should contain at least 1 number and 1 letter","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Password cannot be blank."});yii.validation.string(value, messages, {"message":"Password must be a string.","min":8,"tooShort":"Password should contain at least 8 characters.","skipOnEmpty":1});}},{"id":"user-confirm_password","name":"confirm_password","container":".field-user-confirm_password","input":"#user-confirm_password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Confirm Password cannot be blank."});yii.validation.string(value, messages, {"message":"Confirm Password must be a string.","min":8,"tooShort":"Confirm Password should contain at least 8 characters.","skipOnEmpty":1});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"user-password","compareAttributeName":"User[password]","skipOnEmpty":1,"message":"Confirm Password must be equal to \"Password\"."}, $form);}},{"id":"user-terms","name":"terms","container":".field-user-terms","input":"#user-terms","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Please accept the terms and conditions","requiredValue":1});}}], {"successCssClass":"success"});
+jQuery('#w1').authchoice();
+jQuery('#otp').yiiActiveForm([], {"successCssClass":"success"});
+});</script>    </body>
+
+<!-- Mirrored from demo.foodpurby.in/page/data-privacy by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 11 Jun 2020 14:38:14 GMT -->
+</html>
