@@ -1,14 +1,10 @@
-# saas-tutorial
+# ByNoGame_Proje
+ByNoGame firması için ön çalışma
 
-This is the source code for my 2-hour full-stack web dev tutorial: https://youtu.be/HmyMFZQDWyU
+Projeyi kendinizde görüntülemek isterseniz yapmanız gereken 3 tane işlem var.
 
-To run this Node.js SaaS app starter code, you'll need to create a .env file in the project root directory and define these environment variables:  
+1 ) npm i
+2 ) dosyayı kurdugunuz dosya içinde cmd üzerinden mongod --dbpath ./bynogameDb 
+3 ) nodemon app
 
-STRIPE_SECRET_KEY  
-ENDPOINT_SECRET  
-EXPRESS_SESSION_SECRET  
-STRIPE_PUBLIC_KEY  
-STRIPE_PLAN  
-MONGO_USERNAME  
-MONGO_PASSWORD  
-BASE_URL  
+İyi çalışmalar :)
